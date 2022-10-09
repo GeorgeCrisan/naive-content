@@ -16,8 +16,8 @@ export const sanitizeUrl = (url) => {
 
 export const prepareText = (contentText) => {
 
-  const newText = 
-`---
+  const newText =
+    `---
 title: 'title'
 excerpt: 'description'
 coverImage: '/assets/blog/<filename>/cover.webp'
@@ -31,5 +31,12 @@ ogImage:
 
 `;
 
-return newText + contentText;
+  return newText + contentText;
+}
+
+
+export const delay = (time) => {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, time)
+  });
 }
