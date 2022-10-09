@@ -46,7 +46,7 @@ Optional. The results are saved in "./results/" directory which is created in th
 
 
 ```
-prompt: Optional file name. The name and the extension. Default results.md:  results-custom.md
+prompt: Optional file name. Default results.md:  results-custom.md
 ```
 
 </br>
@@ -70,7 +70,7 @@ To skip an Optional prompt press enter.
 
 ``` 
 prompt: URL:  georgecrisan.com
-prompt: Optional file name. The name and the extension. Default results.md:  result-geo.md
+prompt: Optional file name. Default results.md: result-geo.md
 prompt: Optional delay. Delay in ms to allow the page to load content. For example 2000 is 2 seconds:  
 prompt: Headless mode: Type "y" for yes or "n" for no:  y
 Attempting to navigate:  https://georgecrisan.com

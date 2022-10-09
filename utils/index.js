@@ -14,19 +14,19 @@ export const sanitizeUrl = (url) => {
   return url;
 }
 
-export const prepareText = (contentText) => {
+export const prepareText = (contentText, fileName = "file-name") => {
 
   const newText =
     `---
 title: 'title'
 excerpt: 'description'
-coverImage: '/assets/blog/<filename>/cover.webp'
+coverImage: '/assets/blog/${fileName}/cover.webp'
 date: '${new Date().toJSON()}'
 author:
   name: Admin Bot
   picture: '/assets/blog/authors/admin.jpg'
 ogImage:
-  url: '/assets/blog/<filename>cover.webp'
+  url: '/assets/blog/${fileName}/cover.webp'
 ---
 
 `;

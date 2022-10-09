@@ -11,7 +11,7 @@ prompt.start();
 
 prompt.get([
   { name: "url", required: true, description: 'URL' },
-  { name: "fileName", description: "Optional file name. The name and the extension. Default results.md" },
+  { name: "fileName", description: "Optional file name. Default results.md" },
   { name: "delay", type: "number", description: "Optional delay. Delay in ms to allow the page to load content. For example 2000 is 2 seconds" },
   { name: "headless", required: true, description: 'Headless mode: Type "y" for yes or "n" for no', pattern: /^(y\b|n)/ }
 ],
