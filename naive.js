@@ -11,7 +11,7 @@ prompt.start();
 
 prompt.get([
     { name: "url", required: true, description: 'URL. Without http:// or https://' },
-    { name: "fileName", description: "File name: The name for the json file where the results are saved. Default results.md"},
+    { name: "fileName", description: "File name: The name and the extension. Default results.md"},
     { name: "headless", required: true, description: 'Headless mode: Type "y" for yes or "n" for no.', pattern: /^(y\b|n)/ }
   ], (err, result) => {
   if (err) {
